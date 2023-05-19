@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import ParticleBackground from "react-particle-backgrounds";
 import { settings } from "./settings";
 import Icons from "./Icons/Icons";
+import HorBackContainer from "../../shared/containers/HorBackContainer/HorBackContainer";
 
 const HomePage = (props) => {
   const { homepageLabels } = props;
@@ -14,12 +15,7 @@ const HomePage = (props) => {
         <div className={style.background_particles}>
           <ParticleBackground settings={settings} />
         </div>
-        <div className={style.backgroundEffect}>
-          <div className={style.backgroundEffect_hr}></div>
-          <div className={style.backgroundEffect_hr}></div>
-          <div className={style.backgroundEffect_hr}></div>
-          <div className={style.backgroundEffect_hr}></div>
-        </div>
+        <HorBackContainer />
         <div className={style.homepage_section}>
           <Typography
             variant="h2"

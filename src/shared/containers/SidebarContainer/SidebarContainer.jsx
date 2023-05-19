@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../../../store/Store";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import Sidebar from "../../layouts/Sidebar/Sidebar";
 import { selectSidebarLabels } from "./SidebarContainer.selectors";
 
 const SidebarContainer = () => {

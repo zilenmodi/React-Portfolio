@@ -1,0 +1,10 @@
+.contact_cards {
+  display: flex;
+  padding: 1.5rem;
+  background-color: var(--body-color-secondary) !important;
+  color: var(--first-color) !important;
+}
+
+.contact_card_text {
+  font-weight: 600 !important;
+}

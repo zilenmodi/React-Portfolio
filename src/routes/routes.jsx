@@ -1,3 +1,4 @@
+import ContactPageContainer from "../containers/ContactPageContainer/ContactPageContainer";
 import HomePageContainer from "../containers/HomePageContainer/HomePageContainer";
 import {
   HOME_PAGE,
@@ -50,7 +51,7 @@ export const routersConfig = {
       name: CONTACT_PAGE,
       url: CONTACT_PAGE_URL,
       exact: true,
-      component: <h1>Contact Page</h1>,
+      component: <ContactPageContainer />,
     },
   ],
 };

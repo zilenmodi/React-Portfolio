@@ -1,0 +1,39 @@
+.subtitle_text {
+  font-weight: 700 !important;
+  padding: 8rem 0;
+  position: relative;
+}
+.subtitle_text::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 62%;
+  border-radius: 50px;
+  height: 6px;
+  left: 0%;
+  background-color: var(--first-color-lighter);
+}
+.subtitle_text::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  top: 62%;
+  left: 0%;
+  border-radius: 50px;
+  height: 6px;
+  background-color: var(--first-color);
+}
+
+.subtitle_text_light {
+  font-weight: 800 !important;
+  opacity: 0.05;
+  position: absolute;
+  top: 150px;
+  left: -10px;
+}
+
+@media screen and (max-width: 900px) {
+  .subtitle_text_light {
+    font-size: 3.8rem !important;
+  }
+}

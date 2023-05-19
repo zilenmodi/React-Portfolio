@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import HomePage from "../../components/HomePage/HomePage";
+import HomePage from "../../layouts/HomePage/HomePage";
 import { selectHomePageLabels } from "./HomePageContainer.selectors";
 import { Context } from "../../store/Store";
 
