@@ -29,6 +29,11 @@ export const webLabels = {
       ],
       siderbarFooter: "© 2023 Zilen Modi",
     },
-    homepageLabels: {},
+    homepageLabels: {
+      heading: "Hello, I am ",
+      headingHighlighted: "Zilen Modi",
+      headingSecondary:
+        "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+    },
   },
 };
