@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import SidebarContainer from "./shared/containers/SidebarContainer/SidebarContainer";
 import ErrorPageContainer from "./shared/containers/ErrorPageContainer/ErrorPageContainer";
+import Store from "./store/Store";
 
 function App() {
   const [compval, setCompval] = useState(true);
@@ -23,26 +24,28 @@ function App() {
 
   return (
     <>
-      <div className="app-container">
-        <Router>
-          {compval && <SidebarContainer />}
-          <Routes>
-            <>
-              <Route path="/" element={<Navigate to="/home" />} />
-              {routersConfig.routes.map((route) => {
-                return (
-                  <Route
-                    key={route.name}
-                    path={route.url}
-                    element={route.component}
-                    errorElement={<ErrorPageContainer />}
-                  />
-                );
-              })}
-            </>
-          </Routes>
-        </Router>
-      </div>
+      <Store>
+        <div className="app-container">
+          <Router>
+            {compval && <SidebarContainer />}
+            <Routes>
+              <>
+                <Route path="/" element={<Navigate to="/home" />} />
+                {routersConfig.routes.map((route) => {
+                  return (
+                    <Route
+                      key={route.name}
+                      path={route.url}
+                      element={route.component}
+                      errorElement={<ErrorPageContainer />}
+                    />
+                  );
+                })}
+              </>
+            </Routes>
+          </Router>
+        </div>
+      </Store>
     </>
   );
 }

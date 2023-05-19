@@ -2,16 +2,20 @@ import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import style from "./style.module.css";
 import { Avatar } from "@mui/material";
-import Profile from "../../../assets/profileImage.jpg";
+import Profile from "../../../assets/profileImage.png";
 import Navbar from "./Navbar/Navbar";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const { sidebarLabels } = props;
+  const { sidebarOptions, siderbarFooter } = sidebarLabels;
+
   return (
     <>
       <Box
         sx={{
           width: 320,
           height: "100vh",
+          position: "relative",
         }}
         className={style.body}
       >
@@ -31,9 +35,8 @@ const Sidebar = () => {
             margin: "3rem 0",
           }}
         />
-        <Navbar />
-        {/* Navbar */}
-        {/* Footer */}
+        <Navbar sidebarOptions={sidebarOptions} />
+        <Typography className={style.footer}>{siderbarFooter}</Typography>
       </Box>
     </>
   );

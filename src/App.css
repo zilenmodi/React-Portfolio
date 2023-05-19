@@ -12,7 +12,6 @@
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --body-color-secondary: hsl(var(--hue-color), 85%, 95%);
   --container-color: white;
-  --body-font: "Nunito-Sans", sans-serif;
 }
 
 body.dark-theme {
@@ -26,12 +25,18 @@ body.dark-theme {
 }
 
 body {
-  font-family: "nunito sans", sans-serif;
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
 }
 
 .app-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+
+@media screen and (max-width: 900px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
 }

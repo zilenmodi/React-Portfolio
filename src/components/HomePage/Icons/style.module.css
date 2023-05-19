@@ -1,0 +1,9 @@
+.homepage_icons {
+  cursor: pointer;
+  margin-right: 1rem;
+  color: var(--text-color);
+}
+
+.homepage_icons:hover {
+  color: var(--first-color);
+}
