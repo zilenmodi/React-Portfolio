@@ -1,0 +1,20 @@
+.blogscard_heading {
+  color: var(--text-color);
+}
+
+.blogscard_date {
+  position: absolute;
+  color: var(--body-color) !important ;
+  background-color: var(--first-color);
+  padding: 0.5rem;
+  top: 8%;
+  left: 5%;
+}
+
+.blogscard_img {
+  transition: all 0.8s;
+}
+
+.blogscard_img:hover {
+  transform: scale(1.2);
+}

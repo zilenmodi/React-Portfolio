@@ -1,3 +1,4 @@
+import BlogsPageContainer from "../containers/BlogsPageContainer/BlogsPageContainer";
 import ContactPageContainer from "../containers/ContactPageContainer/ContactPageContainer";
 import HomePageContainer from "../containers/HomePageContainer/HomePageContainer";
 import {
@@ -45,7 +46,7 @@ export const routersConfig = {
       name: BLOGS_PAGE,
       url: BLOGS_PAGE_URL,
       exact: true,
-      component: <h1>Blogs Page</h1>,
+      component: <BlogsPageContainer />,
     },
     {
       name: CONTACT_PAGE,
