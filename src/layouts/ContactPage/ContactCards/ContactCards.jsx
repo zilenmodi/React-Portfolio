@@ -4,18 +4,20 @@ import ContactAddressCard from "./ContactAddressCard";
 import ContactEmailCard from "./ContactEmailCard";
 import ContactMobileCard from "./ContactMobileCard";
 
-const ContactCards = () => {
+const ContactCards = (props) => {
+  if (!props.phoneCard) return;
+  const { phoneCard, emailCard, addressCard } = props;
   return (
     <>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <ContactMobileCard />
+          <ContactMobileCard phoneCard={phoneCard} />
         </Grid>
         <Grid item xs={12}>
-          <ContactEmailCard />
+          <ContactEmailCard emailCard={emailCard} />
         </Grid>
         <Grid item xs={12}>
-          <ContactAddressCard />
+          <ContactAddressCard addressCard={addressCard} />
         </Grid>
       </Grid>
     </>

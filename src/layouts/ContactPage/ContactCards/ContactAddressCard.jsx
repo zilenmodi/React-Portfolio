@@ -3,7 +3,8 @@ import React from "react";
 import style from "./style.module.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-const ContactAddressCard = () => {
+const ContactAddressCard = (props) => {
+  const { addressCard } = props;
   return (
     <>
       <Paper elevation={0} className={style.contact_cards}>
@@ -13,10 +14,10 @@ const ContactAddressCard = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" sx={{ mb: 2 }}>
-              Address
+              {addressCard.addressCardTitle}
             </Typography>
             <Typography variant="subtitle1" className={style.contact_card_text}>
-              39, Paraskunj Society, Near Shivranjani BRTS, Ahemdabad, Gujarat.
+              {addressCard.address}
             </Typography>
           </Grid>
         </Grid>

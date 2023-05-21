@@ -35,5 +35,30 @@ export const webLabels = {
       headingSecondary:
         "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
     },
+    contactpageLabels: {
+      pageTitle: "CONTACT ME",
+      contactForm: {
+        formTitle: "Get In Touch",
+        nameField: "Enter Your Name",
+        emailField: "Enter Your Email",
+        subjectField: "Enter Your Subject",
+        multiLineThoughtsField: "Enter Your Thoughts",
+      },
+      phoneCard: {
+        phoneCardTitle: "Phone",
+        phoneNo1: "+91 9724666420",
+        phoneNo2: "+91 8320472114",
+      },
+      emailCard: {
+        emailCardTitle: "Email",
+        email1: "zilenmodi@gmail.com",
+        email2: "zilen.m.simformsolutions@gmail.com",
+      },
+      addressCard: {
+        addressCardTitle: "Address",
+        address:
+          "39, Paraskunj Society, Near Shivranjani BRTS, Ahemdabad, Gujarat.",
+      },
+    },
   },
 };

@@ -3,7 +3,8 @@ import React from "react";
 import style from "./style.module.css";
 import EmailIcon from "@mui/icons-material/Email";
 
-const ContactEmailCard = () => {
+const ContactEmailCard = (props) => {
+  const { emailCard } = props;
   return (
     <>
       <Paper elevation={0} className={style.contact_cards}>
@@ -13,13 +14,13 @@ const ContactEmailCard = () => {
           </Grid>
           <Grid item>
             <Typography variant="h6" sx={{ mb: 2 }}>
-              Email
+              {emailCard.emailCardTitle}
             </Typography>
             <Typography variant="subtitle1" className={style.contact_card_text}>
-              zilenmodi@gmail.com
+              {emailCard.email1}
             </Typography>
             <Typography variant="subtitle1" className={style.contact_card_text}>
-              zilen.m.simformsolutions@gmail.com
+              {emailCard.email2}
             </Typography>
           </Grid>
         </Grid>
