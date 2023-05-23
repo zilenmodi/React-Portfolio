@@ -9,7 +9,9 @@ import AboutSec from "./AboutSec/AboutSec";
 import ServicesSec from "./ServicesSec/ServicesSec";
 import ReviewsSec from "./ReviewsSec/ReviewsSec";
 
-const AboutPage = () => {
+const AboutPage = (props) => {
+  const { reviews, services, aboutpageLabels } = props;
+  const { aboutSec } = aboutpageLabels;
   return (
     <>
       <div className={style.aboutpage_container}>
@@ -19,13 +21,13 @@ const AboutPage = () => {
             <Box sx={{ flexGrow: 1, paddingBottom: "2rem" }}>
               <Grid container spacing={3}>
                 <Grid item xs={12}>
-                  <AboutSec />
+                  <AboutSec aboutSec={aboutSec} />
                 </Grid>
                 <Grid item xs={12}>
-                  <ServicesSec />
+                  <ServicesSec services={services} />
                 </Grid>
                 <Grid item xs={12}>
-                  <ReviewsSec />
+                  <ReviewsSec reviews={reviews} />
                 </Grid>
               </Grid>
             </Box>

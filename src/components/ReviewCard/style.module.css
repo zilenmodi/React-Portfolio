@@ -1,0 +1,30 @@
+.review_card_text {
+  font-size: 1.15rem !important;
+}
+
+.review_card {
+  position: relative;
+  background-color: var(--body-color-secondary) !important;
+  color: var(--text-color) !important;
+}
+
+.review_card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  bottom: -19px;
+  border-top: 20px solid var(--body-color-secondary);
+}
+
+.review_verline {
+  height: 100%;
+  width: 5px;
+  position: absolute;
+  background-color: gainsboro;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+}

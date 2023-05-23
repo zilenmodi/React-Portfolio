@@ -60,5 +60,27 @@ export const webLabels = {
           "39, Paraskunj Society, Near Shivranjani BRTS, Ahemdabad, Gujarat.",
       },
     },
+    aboutpageLabels: {
+      aboutSec: {
+        pageTitle: "ABOUT ME",
+        heading: "I am ",
+        headingSpan: "Zilen Modi",
+        headingText:
+          "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
+        fullnameLabel: "Full Name: ",
+        ageLabel: "Age: ",
+        nationLabel: "Nationality: ",
+        langLabel: "Languages: ",
+        addressLabel: "Address: ",
+        freelanceLabel: "Freelance: ",
+        fullname: "Zilen P. Modi",
+        age: "22 Years",
+        nation: "Indian",
+        lang: "Hindi, English",
+        address: "Ahemdabad, Gujarat, India",
+        freelance: "None",
+        downloadBtn: "DOWNLOAD CV",
+      },
+    },
   },
 };
