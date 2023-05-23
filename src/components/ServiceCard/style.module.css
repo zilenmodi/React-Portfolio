@@ -1,0 +1,28 @@
+.service_card_text {
+  font-size: 1.1rem !important;
+}
+
+.service_card {
+  background-color: var(--body-color-secondary) !important;
+  color: var(--text-color) !important;
+}
+
+.service_card_icon {
+  color: var(--first-color);
+}
+
+.service_card_hoverline {
+  width: 100%;
+  position: absolute;
+  height: 5px;
+  background-color: gainsboro;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.service_card:hover .service_card_hoverline {
+  background-color: var(--first-color);
+  opacity: 1;
+}

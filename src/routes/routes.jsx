@@ -1,3 +1,4 @@
+import AboutPageContainer from "../containers/AboutPageContainer/AboutPageContainer";
 import BlogsPageContainer from "../containers/BlogsPageContainer/BlogsPageContainer";
 import ContactPageContainer from "../containers/ContactPageContainer/ContactPageContainer";
 import HomePageContainer from "../containers/HomePageContainer/HomePageContainer";
@@ -29,7 +30,7 @@ export const routersConfig = {
       name: ABOUT_PAGE,
       url: ABOUT_PAGE_URL,
       exact: true,
-      component: <h1>About Page</h1>,
+      component: <AboutPageContainer />,
     },
     {
       name: RESUME_PAGE,

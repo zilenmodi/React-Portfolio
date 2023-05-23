@@ -1,0 +1,44 @@
+.profile_details_text {
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+}
+
+.profile_details_text_span {
+  font-weight: 400 !important;
+}
+
+.heading_span {
+  color: var(--first-color);
+}
+
+.submit_btn {
+  margin-top: 1.2rem !important;
+  background-color: var(--first-color) !important;
+  color: var(--input-color) !important;
+}
+
+.profile_card_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.profile_card_span_left {
+  background-color: var(--first-color);
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.9rem;
+  height: 220px;
+}
+
+.profile_card_span_right {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  background-color: var(--first-color);
+  opacity: 0.6;
+  width: 0.9rem;
+  height: 220px;
+}
