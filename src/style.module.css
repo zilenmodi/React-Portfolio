@@ -16,4 +16,7 @@
 
 :export {
   firstColor: hsl(var(--hue-color), 69%, 61%);
+  firstColorLight: hsl(var(--hue-color), 92%, 85%);
+  dotColorLight: rgba(0, 0, 0);
+  dotColorDark: rgba(255, 255, 255);
 }

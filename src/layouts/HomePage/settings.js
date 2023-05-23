@@ -1,3 +1,5 @@
+import { dotColorLight, dotColorDark } from "../../style.module.css";
+
 export const settings = {
   canvas: {
     canvasFillSpace: true,
@@ -7,7 +9,7 @@ export const settings = {
   },
   particle: {
     particleCount: 100,
-    color: "var(--first-color)",
+    color: dotColorDark,
     minSize: 2,
     maxSize: 5,
   },

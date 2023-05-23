@@ -1,0 +1,5 @@
+.progress_bar {
+  background-color: var(--first-color-lighter) !important;
+  height: 5px !important;
+  border-radius: 3px;
+}

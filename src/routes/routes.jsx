@@ -3,6 +3,7 @@ import BlogsPageContainer from "../containers/BlogsPageContainer/BlogsPageContai
 import ContactPageContainer from "../containers/ContactPageContainer/ContactPageContainer";
 import HomePageContainer from "../containers/HomePageContainer/HomePageContainer";
 import ProjectsPageContainer from "../containers/ProjectsPageContainer/ProjectsPageContainer";
+import ResumePageContainer from "../containers/ResumePageContainer/ResumePageContainer";
 import {
   HOME_PAGE,
   ABOUT_PAGE,
@@ -36,7 +37,7 @@ export const routersConfig = {
       name: RESUME_PAGE,
       url: RESUME_PAGE_URL,
       exact: true,
-      component: <h1>Resume Page</h1>,
+      component: <ResumePageContainer />,
     },
     {
       name: PROJECTS_PAGE,

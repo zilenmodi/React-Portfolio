@@ -15,7 +15,10 @@ const BlogCard = (props) => {
   const { title, imageUrl } = blog;
   return (
     <>
-      <Card sx={{ padding: "1rem", position: "relative" }}>
+      <Card
+        sx={{ padding: "1rem", position: "relative" }}
+        className={style.blog_card}
+      >
         <Box sx={{ height: 250, overflow: "hidden" }}>
           <CardMedia
             component="img"

@@ -1,0 +1,21 @@
+.toggle_btn_div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.toggle_icon_btn {
+  background-color: var(--first-color);
+  padding: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle_icon {
+  color: var(--input-color) !important;
+  top: 0;
+  right: 0;
+}

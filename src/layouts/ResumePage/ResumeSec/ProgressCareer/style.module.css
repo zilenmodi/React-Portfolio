@@ -1,0 +1,33 @@
+.progress_career_heading {
+  color: var(--text-color) !important;
+}
+
+.career_verline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  background-color: gainsboro;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.career_verline_dot {
+  position: relative;
+}
+
+.career_verline_dot:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.career_verline_dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--body-color);
+  border: 3px solid gainsboro;
+  border-radius: 100%;
+  position: absolute;
+  top: 8px;
+  left: -46px;
+}

@@ -1,3 +1,7 @@
+.project_card {
+  background-color: var(--card-body-color) !important;
+}
+
 .parent_div_hover {
   position: relative;
 }

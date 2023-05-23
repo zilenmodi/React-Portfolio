@@ -2,13 +2,43 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import style from "./style.module.css";
 import ParticleBackground from "react-particle-backgrounds";
-import { settings } from "./settings";
+// import { settings } from "./settings";
 import Icons from "./Icons/Icons";
 import HorBackContainer from "../../shared/containers/HorBackContainer/HorBackContainer";
+import { dotColorLight, dotColorDark } from "../../style.module.css";
+import { useContext } from "react";
+import { AppThemeContext } from "../../store/Store";
 
 const HomePage = (props) => {
+  const { lightTheme } = useContext(AppThemeContext);
   const { homepageLabels } = props;
   const { heading, headingHighlighted, headingSecondary } = homepageLabels;
+
+  const settings = {
+    canvas: {
+      canvasFillSpace: true,
+      width: 100,
+      height: 100,
+      useBouncyWalls: false,
+    },
+    particle: {
+      particleCount: 100,
+      color: lightTheme ? dotColorLight : dotColorDark,
+      minSize: 2,
+      maxSize: 5,
+    },
+    velocity: {
+      directionAngle: 0,
+      directionAngleVariance: 0,
+      minSpeed: null,
+    },
+    opacity: {
+      minOpacity: 0.2,
+      maxOpacity: 0.2,
+      opacityTransitionTime: 3000,
+    },
+  };
+
   return (
     <>
       <div className={style.homepage_container}>

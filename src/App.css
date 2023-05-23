@@ -11,20 +11,18 @@
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --body-color-secondary: hsl(var(--hue-color), 85%, 95%);
+  --card-body-color: hsl(var(--hue-color), 50%, 98%);
   --container-color: white;
-}
-
-:export {
-  firstColor: var(--first-color);
 }
 
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --input-color: hsl(var(--hue-color), 29%, 85%);
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --body-color-secondary: hsl(var(--hue-color), 29%, 18%);
+  --card-body-color: hsl(var(--hue-color), 20%, 10%);
   --container-color: var((--hue-color, 29%, 16%));
 }
 
@@ -35,6 +33,7 @@ body {
 }
 
 .app-container {
+  position: relative;
   display: grid;
   grid-template-columns: 320px 1fr;
 }

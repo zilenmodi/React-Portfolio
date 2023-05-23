@@ -3,6 +3,8 @@ import style from "./style.module.css";
 import { FormControl, TextField, Typography, Box, Button } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { firstColor } from "../../../style.module.css";
+import { useContext } from "react";
+import { AppThemeContext } from "../../../store/Store";
 
 const ContactForm = (props) => {
   if (!props.contactForm) {
@@ -17,11 +19,13 @@ const ContactForm = (props) => {
     multiLineThoughtsField,
   } = contactForm;
   const fields = [nameField, emailField, subjectField];
+  const { lightTheme } = useContext(AppThemeContext);
   const theme = createTheme({
     palette: {
       primary: {
         main: firstColor,
       },
+      mode: lightTheme ? "light" : "dark",
     },
   });
   return (

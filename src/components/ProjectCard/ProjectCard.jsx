@@ -19,8 +19,8 @@ const ProjectCard = (props) => {
         sx={{
           padding: "1rem",
           position: "relative",
-          background: "transperent",
         }}
+        className={style.project_card}
       >
         <div className={style.parent_div_hover}>
           <Box sx={{ height: 250, overflow: "hidden", position: "relative" }}>

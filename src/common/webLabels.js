@@ -72,7 +72,7 @@ export const webLabels = {
         nationLabel: "Nationality: ",
         langLabel: "Languages: ",
         addressLabel: "Address: ",
-        freelanceLabel: "Freelance: ",
+        freelanceLabel: "Freelance:",
         fullname: "Zilen P. Modi",
         age: "22 Years",
         nation: "Indian",

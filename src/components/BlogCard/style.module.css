@@ -1,3 +1,7 @@
+.blog_card {
+  background-color: var(--card-body-color) !important;
+}
+
 .blogscard_heading {
   color: var(--text-color);
 }
