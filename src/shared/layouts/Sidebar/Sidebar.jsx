@@ -20,7 +20,7 @@ const Sidebar = (props, ref) => {
         ref={ref}
         sx={{
           width: 320,
-          height: "100dvh",
+          height: "100vh",
         }}
         className={style.body}
       >

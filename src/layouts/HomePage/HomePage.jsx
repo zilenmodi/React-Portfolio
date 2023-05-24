@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import style from "./style.module.css";
-import ParticleBackground from "react-particle-backgrounds";
+// import ParticleBackground from "react-particle-backgrounds";
 // import { settings } from "./settings";
 import Icons from "./Icons/Icons";
 import HorBackContainer from "../../shared/containers/HorBackContainer/HorBackContainer";
@@ -43,7 +43,7 @@ const HomePage = (props) => {
     <>
       <div className={style.homepage_container}>
         <div className={style.background_particles}>
-          <ParticleBackground settings={settings} />
+          {/* <ParticleBackground settings={settings} /> */}
         </div>
         <HorBackContainer />
         <div className={style.homepage_section}>
