@@ -1,11 +1,12 @@
-.toggle_btn_div {
+.menu_btn_div {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1000;
+  display: none;
 }
 
-.toggle_icon_btn {
+.menu_icon_btn {
   background-color: var(--first-color);
   padding: 0.5rem;
   display: flex;
@@ -14,8 +15,14 @@
   cursor: pointer;
 }
 
-.toggle_icon {
+.menu_icon {
   color: var(--input-color) !important;
   top: 0;
   right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .menu_btn_div {
+    display: block;
+  }
 }

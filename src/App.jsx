@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import "./App.css";
 import { routersConfig } from "./routes/routes";
 import {
@@ -11,8 +11,10 @@ import SidebarContainer from "./shared/containers/SidebarContainer/SidebarContai
 import ErrorPageContainer from "./shared/containers/ErrorPageContainer/ErrorPageContainer";
 import { AppThemeContext } from "./store/Store";
 import ThemeToggleButtons from "./components/ThemeToggleButtons/ThemeToggleButtons";
+import HumburgerMenuButton from "./components/HumburgerMenuButton/HumburgerMenuButton";
 
 function App() {
+  const ref = useRef(null);
   const { lightTheme, setLightTheme } = useContext(AppThemeContext);
   const [compval, setCompval] = useState(true);
 
@@ -35,7 +37,6 @@ function App() {
       document.body.classList.remove("dark-theme");
     };
   }, [lightTheme]);
-  console.log(lightTheme);
 
   return (
     <>
@@ -44,8 +45,10 @@ function App() {
           lightTheme={lightTheme}
           setLightTheme={setLightTheme}
         />
+        <HumburgerMenuButton ref={ref} />
         <Router>
-          {compval && <SidebarContainer />}
+          {/* {compval && <SidebarContainer />} */}
+          <SidebarContainer ref={ref} />
           <Routes>
             <>
               <Route path="/" element={<Navigate to="/home" />} />

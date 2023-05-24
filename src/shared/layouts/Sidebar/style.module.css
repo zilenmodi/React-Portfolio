@@ -4,9 +4,34 @@
   flex-direction: column;
   padding: 3rem 0;
   align-items: center;
+  position: relative;
 }
 
 .footer {
   position: absolute;
   bottom: 1.8rem;
+}
+
+.back_btn_icon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 300px !important;
+    transform: translateX(-300px);
+    transition: all 0.5s;
+  }
+  .back_btn_icon {
+    display: block;
+  }
 }

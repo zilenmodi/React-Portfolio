@@ -4,21 +4,29 @@ import style from "./style.module.css";
 import { Avatar } from "@mui/material";
 import Profile from "../../../assets/profileImage.png";
 import Navbar from "./Navbar/Navbar";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
-const Sidebar = (props) => {
+const Sidebar = (props, ref) => {
   const { sidebarLabels } = props;
   const { sidebarOptions, siderbarFooter } = sidebarLabels;
+
+  const handleBackBtnClick = () => {
+    ref.current.style.transform = "translateX(-300px)";
+  };
 
   return (
     <>
       <Box
+        ref={ref}
         sx={{
           width: 320,
           height: "100vh",
-          position: "relative",
         }}
         className={style.body}
       >
+        <div className={style.back_btn_icon} onClick={handleBackBtnClick}>
+          <ArrowBackIosIcon />
+        </div>
         <Avatar
           alt="Remy Sharp"
           src={Profile}
@@ -42,4 +50,4 @@ const Sidebar = (props) => {
   );
 };
 
-export default Sidebar;
+export default React.forwardRef(Sidebar);
